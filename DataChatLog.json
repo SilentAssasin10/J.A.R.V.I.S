@@ -15,7 +15,7 @@
         "role": "assistant",
         "content": "I'm doing well, sir!"
     },
-    {
+    { 
         "role": "user",
         "content": "bro"
     },

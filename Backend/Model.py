@@ -12,6 +12,7 @@ funcs = {
     "exit", "who", "general", "realtime", "open", "close", "play", "generate image", "system", "content", "google search", "youtube search", "reminder"
 }
 
+
 messages = []
 
 preamble = """
