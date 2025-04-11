@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-pass
-=======
+
 from googlesearch import search
 from groq import Groq
 from json import load, dump
@@ -102,4 +100,3 @@ if __name__ == "__main__":
     while True:
         user_input = input("Enter Your Question: ")
         print(RealTimeSearchEngine(user_input))
->>>>>>> ab02c4ad3a1c9dc10eba305312a7edd41519101f

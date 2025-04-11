@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-pass
-=======
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
@@ -127,4 +125,3 @@ if __name__ == "__main__":
         Text = SpeechRecognition()
         print(Text)
             
->>>>>>> ab02c4ad3a1c9dc10eba305312a7edd41519101f

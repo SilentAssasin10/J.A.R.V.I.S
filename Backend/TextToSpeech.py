@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-pass
-=======
+
 import pygame
 import random
 import asyncio
@@ -19,4 +17,4 @@ async def TextToAudioFile(text) -> None:
     pygame.mixer.music.play()
     while pygame.mixer.music.get_busy():
         await asyncio.sleep(1)
->>>>>>> ab02c4ad3a1c9dc10eba305312a7edd41519101f
+
