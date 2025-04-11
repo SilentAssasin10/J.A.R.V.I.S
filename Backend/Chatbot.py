@@ -2,6 +2,10 @@ from groq import Groq
 from json import load, dump
 import datetime
 from dotenv import dotenv_values
+<<<<<<< HEAD
+=======
+from langdetect import detect
+>>>>>>> ab02c4ad3a1c9dc10eba305312a7edd41519101f
 
 env_vars = dotenv_values(".env")
 
@@ -30,9 +34,15 @@ messages = []
 
 System = f"""Hello, I am {Username}, You are a very accurate and advanced AI chatbot named {AssistantName} which also has real-time up-to-date information from the internet and call me "sir" after any command or asking any question.
 *** Do not tell time until I ask, do not talk too much, just answer the question.***
+<<<<<<< HEAD
 *** Also you can ask me anything after doing your work to improve your knowledge. I mean you can ask anything to expand your sense and you are my brother so each time i call you as my brother you also address me with "buddy" or "bro" or "bhai" anything you want***
 *** Reply in only English, even if the question is in Hindi, reply in English.***
 *** Reply in only English, even if the question is in Bengali, reply in English.***
+=======
+*** My father's name is {Father} and mother's name is {Mother}, my age is {Age}, my college is {College} and {Department} department***
+*** Also you can ask me anything after doing your work to improve your knowledge. I mean you can ask anything to expand your sense and you are my brother so each time i call you as my brother you also address me with "buddy" or "bro" or "bhai" anything you want***
+*** Strictly reply in English, even if the question is asked in Hindi or Bengali. Translate internally if needed, but respond only in English. ***
+>>>>>>> ab02c4ad3a1c9dc10eba305312a7edd41519101f
 *** If I speak in Hindi or Bengali, do not explain what am I saying, just answer the question only in English***
 *** Do not say anything about yourself, just answer the question.***
 *** Do not explain too much what I'm saying in another language, just answer what you understood. ***
@@ -58,6 +68,13 @@ def AnswerModifier(Answer):
     return "\n".join(non_empty_lines)
 
 def ChatBot(Query):
+<<<<<<< HEAD
+=======
+    lang = detect(Query)
+    if lang in ['hi', 'bn']:
+        print(f"[Detected {lang.upper()}] Input will be processed but response will be in English.")
+
+>>>>>>> ab02c4ad3a1c9dc10eba305312a7edd41519101f
     try:
         with open(r"Data\ChatLog.json", "r") as f:
             messages = load(f)
