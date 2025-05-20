@@ -7,7 +7,7 @@ import os
 from dotenv import dotenv_values
 
 env_vars = dotenv_values(".env")
-AssistantVoice = env_vars.get("AssistantVoice")
+AssistantVoice = env_vars.get("Assistantvoice")
 
 async def TextToAudioFile(text) -> None:
     communicate = edge_tts.Communicate(text, voice=AssistantVoice)
